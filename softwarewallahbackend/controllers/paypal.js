@@ -5,7 +5,7 @@ require("dotenv").config();
 
 // Configure PayPal with your credentials
 paypal.configure({
-  mode: process.env.PAYPAL_MODE, // or 'live' for production
+  mode: "sandbox", // or 'live' for production
   client_id: process.env.PAYPAL_CLIENT_ID,
   client_secret: process.env.PAYPAL_CLIENT_SECRET,
 });

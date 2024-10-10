@@ -8,6 +8,7 @@ const authRoutes = require("./routes/authRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const subscriptionRoutes = require("./routes/subscriptionPlan.routes");
 const contactRoutes = require("./routes/contact.routes");
+const toolRoutes = require("./routes/toolRoutes");
 
 dotenv.config();
 
@@ -36,6 +37,7 @@ app.use("/api/subscription", subscriptionRoutes);
 // Use payment routes
 app.use("/api/payment", paymentRoutes);
 app.use("/api/contacts", contactRoutes);
+app.use("/api/tool", toolRoutes)
 
 const PORT = process.env.PORT || 5000;
 
